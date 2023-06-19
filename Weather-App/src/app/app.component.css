@@ -1,0 +1,25 @@
+.bg-img {
+  
+  min-height: 500px;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  height: 480px;
+  background-size: cover;
+  position: relative;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+}

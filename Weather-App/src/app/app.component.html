@@ -1,0 +1,53 @@
+<div class="row" class="bg-img">
+  <div
+    class="col-10 offset-1 col-lg-8 offset-lg-2 div-wrapper d-flex justify-content-center align-items-center"
+  >
+    <div class="align">
+      <div>
+        <h1>Rohan Weather Web App</h1>
+
+        <input
+          type="text"
+          [(ngModel)]="locationName"
+          placeholder="Enter location"
+        />
+        <button (click)="searchWeather()">Search</button>
+
+        <div *ngIf="weatherData">
+          <div *ngFor="let weather of weatherData">
+            <h2>Location: {{ weather.location }}</h2>
+            <p>Condition: {{ weather.condition }}</p>
+            <p>Temperature: {{ weather.temperature }}</p>
+            <p>Humidity: {{ weather.humidity }}</p>
+          </div>
+        </div>
+      </div>
+
+      <body>
+        <table>
+          <tr>
+            <th>Weather Location</th>
+          </tr>
+          <tr>
+            <td>Varanasi</td>
+          </tr>
+          <tr>
+            <td>New Delhi</td>
+          </tr>
+          <tr>
+            <td>Bangalore</td>
+          </tr>
+          <tr>
+            <td>Pune</td>
+          </tr>
+          <tr>
+            <td>Chennai</td>
+          </tr>
+          <tr>
+            <td>Hyderabad</td>
+          </tr>
+        </table>
+      </body>
+    </div>
+  </div>
+</div>
